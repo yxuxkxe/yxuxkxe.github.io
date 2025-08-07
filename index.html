@@ -2,15 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Project</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WiPiCap: Real-time CBR Decoder</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    body { font-family: sans-serif; margin: 2em; }
-    h1 { color: #333; }
+    body { padding: 2rem; }
+    .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+    .video-container iframe, .video-container video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    .section-title { margin-top: 2rem; }
+    pre { background: #f4f4f4; padding: 1em; overflow-x: auto; }
   </style>
 </head>
 <body>
-  <h1>Hello, GitHub Pages!</h1>
-  <p>This is a sample project page.</p>
+  <section class="section">
+    <div class="container">
+      <h1 class="title is-2">WiPiCap: Real-time IEEE 802.11ac/ax Compressed Beamforming Report Decoding System</h1>
+      <p class="subtitle is-5">Yusuke Ikemura, Taro Yamada, Hanako Suzuki, ...</p>
+      <p><strong>MobiCom 2025 Demo (accepted)</strong></p>
+
+      <div class="section-title">
+        <h2 class="title is-4">GitHub</h2>
+        <p><a href="https://github.com/yourusername/wipicap" target="_blank"><i class="fab fa-github"></i> https://github.com/yourusername/wipicap</a></p>
+      </div>
+
+      <div class="section-title">
+        <h2 class="title is-4">Demo Video</h2>
+        <h3 class="subtitle is-6">Overall Demo</h3>
+        <div class="video-container">
+          <video controls src="assets/demo.mp4"></video>
+        </div>
+
+        <h3 class="subtitle is-6">Stable: Amplitude & Phase</h3>
+        <div class="video-container">
+          <video controls src="assets/stable_amp_phase.mp4"></video>
+        </div>
+
+        <h3 class="subtitle is-6">Dynamic: Amplitude & Phase</h3>
+        <div class="video-container">
+          <video controls src="assets/dynamic_amp_phase.mp4"></video>
+        </div>
+      </div>
+
+      <div class="section-title">
+        <h2 class="title is-4">Required Equipment</h2>
+        <ul>
+          <li>Raspberry Pi 3 Model B+</li>
+          <li>Wi-Fi Access Point (e.g., TP-Link Archer AX6000)</li>
+          <li>Smartphone or client device (e.g., iPhone 13)</li>
+          <li>HDMI monitor (for visualization)</li>
+          <li>Power supply, SD card, and accessories</li>
+        </ul>
+      </div>
+
+      <div class="section-title">
+        <h2 class="title is-4">BibTeX</h2>
+        <p>To cite our work, please use the following BibTeX entry:</p>
+        <pre><code>@inproceedings{ikemura2025wipicap,
+  title={{WiPiCap: Real-time IEEE 802.11ac/ax Compressed Beamforming Report Decoding System}},
+  author={Ikemura, Yusuke and Yamada, Taro and Suzuki, Hanako and ...},
+  booktitle={Proceedings of the 31st Annual International Conference on Mobile Computing and Networking (MobiCom)},
+  year={2025},
+  note={Demo Session},
+}</code></pre>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
+  
